@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+    <title>DSA</title>
+</head>
+
+<body>
+    <button onclick="findingSecondSmallest()">Array</button>
+</body>
+<script>
+    const arr = [10, 27, 30]
+
+    let even = 0
+    let count = 0
+    function avgEven() {
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 == 0) {
+                even = even + arr[i]
+                count++
+            }
+        }
+        let average = even / count;
+        console.log(average)
+
+    }
+    avgEven()
+</script>
